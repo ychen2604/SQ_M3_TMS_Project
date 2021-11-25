@@ -24,12 +24,10 @@
 */
 var NAVTREE =
 [
-  [ "The TMS Project", "index.html", [
-    [ "TMS Project", "index.html", [
-      [ "Program Introduction", "index.html#intro", null ],
-      [ "Special Release Notes", "index.html#notes", null ],
-      [ "Current version of the TMS Project:", "index.html#version", null ]
-    ] ],
+  [ "TMS Project", "index.html", [
+    [ "Program Introduction", "index.html#intro", null ],
+    [ "Special Release Notes", "index.html#notes", null ],
+    [ "Current version of the TMS Project:", "index.html#version", null ],
     [ "Todo List", "todo.html", null ],
     [ "Bug List", "bug.html", null ],
     [ "Packages", "namespaces.html", [
@@ -37,7 +35,11 @@ var NAVTREE =
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
-      [ "Class Index", "classes.html", null ]
+      [ "Class Index", "classes.html", null ],
+      [ "Class Members", "functions.html", [
+        [ "All", "functions.html", null ],
+        [ "Functions", "functions_func.html", null ]
+      ] ]
     ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ]

@@ -4,7 +4,14 @@
 ///
 ///
 /// \section intro Program Introduction
-/// <b>TMS</b> application
+/// <b>TMS Application</b>
+/// is a critical part of the shipping and logistics industry. Allowing for the purchasing, scheduling, monitoring and billing of organizations 
+/// who desire to have cargo shipped via truck or train, the TMS system you will be working on this semester is a representation of a system that has 
+/// been worked on by SET students in their co-op work terms. Your work is considered a prototype, to help determine the feasibility and core issues of 
+/// developing a deeper solution for the huge, multinational, Omnicorp Corporation.
+///
+/// During this project, your team will have an opportunity to use skills and techniques being developed in other courses this semester. For example, 
+/// there will be a requirement to communicate to/from a database, along with the need for the application to be developed as a Windows application.
 ///
 ///
 /// <hr>
