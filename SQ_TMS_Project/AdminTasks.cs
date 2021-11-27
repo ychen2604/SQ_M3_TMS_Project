@@ -80,8 +80,16 @@ namespace SQ_TMS_Project
         */
         public bool AlterTable(string tableName, string query)
         {
-
-            return true;
+            try
+            {
+                // query successful
+                return true;
+            }
+            catch (Exception)
+            {
+                // query exception
+                return false;
+            }
         }
 
         /**

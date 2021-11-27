@@ -27,5 +27,26 @@ namespace UnitTests
             AdminTasks adm = new AdminTasks();
             Assert.AreEqual(true, adm.ReviewLogFiles(""));
         }
+
+        [TestMethod]
+        public void ReviewLogFilesFalse()
+        {
+            AdminTasks adm = new AdminTasks();
+            Assert.AreEqual(false, adm.ReviewLogFiles(""));
+        }
+
+        [TestMethod]
+        public void IsAlterTableTrue()
+        {
+            AdminTasks adm = new AdminTasks();
+            Assert.AreEqual(true, adm.AlterTable("", ""));
+        }
+
+        [TestMethod]
+        public void IsAlterTableFalse()
+        {
+            AdminTasks adm = new AdminTasks();
+            Assert.AreEqual(false, adm.AlterTable("", ""));
+        }
     }
 }
