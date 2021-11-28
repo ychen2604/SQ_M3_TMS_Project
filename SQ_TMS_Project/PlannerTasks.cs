@@ -106,10 +106,10 @@ namespace SQ_TMS_Project
         *	\param int OrderID,int CityID
         *	\returns int[] carrierArray
         */
-        public int[] WhenSplitToMultipleTrips(int OrderID, int CityID)
+        public List<int> WhenSplitToMultipleTrips(int OrderID, int CityID)
         {
 
-            int[] carrierArray = new int[50];
+            List<int> carrierArray = new List<int>();
             return carrierArray;
         }
 
