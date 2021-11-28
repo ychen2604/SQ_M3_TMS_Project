@@ -27,10 +27,10 @@ var NAVTREE =
   [ "TMS Project", "index.html", [
     [ "Program Introduction", "index.html#intro", null ],
     [ "Special Release Notes", "index.html#notes", null ],
+    [ "Test_Results", "index.html#Test_Results", null ],
     [ "Current version of the TMS Project:", "index.html#version", null ],
     [ "Todo List", "todo.html", null ],
     [ "Bug List", "bug.html", null ],
-    [ "Test List", "test.html", null ],
     [ "Packages", "namespaces.html", [
       [ "Packages", "namespaces.html", "namespaces_dup" ]
     ] ],

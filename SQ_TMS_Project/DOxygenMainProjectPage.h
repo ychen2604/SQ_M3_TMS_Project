@@ -24,8 +24,9 @@
 /// <hr>
 /// \bug Not applicable
 ///
+/// 
 /// <hr>
-/// \test
+/// \section Test_Results
 /// \image html test_results.jpg
 /// 
 /// <hr>
