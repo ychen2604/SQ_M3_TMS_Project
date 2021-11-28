@@ -8,42 +8,50 @@ namespace UnitTests
     public class PlannerTasksTest
     {
         [TestMethod]
-        public void IsReviewCustomersTrue()
+        public void IsReceiversOrderTrue()
         {
             PlannerTasks planTest = new PlannerTasks();
             Assert.AreEqual(true, planTest.ReceiversOrder(0,0));
         }
 
         [TestMethod]
-        public void IsReviewCustomersFalse()
+        public void IsReceiversOrderFalse()
         {
             PlannerTasks planTest = new PlannerTasks();
-            Assert.AreEqual(false, planTest.SelectCarriers(0,50));
+            Assert.AreEqual(false, planTest.ReceiversOrder(0, 0));
         }
 
         [TestMethod]
-        public void newOrderTrue()
+        public void TestSelectCarriers()
         {
             PlannerTasks planTest = new PlannerTasks();
-            Assert.AreEqual(true, planTest.WhenSplitToMultipleTrips(0,50));
+            Assert.AreEqual(1, planTest.SelectCarriers(0, 50));
         }
 
         [TestMethod]
-        public void newOrderFalse()
+        public void TestWhenSplitToMultipleTrips()
         {
+            int[] carrierArray = new int[50];
             PlannerTasks planTest = new PlannerTasks();
-            Assert.AreEqual(false, planTest.OneDayIncrements(0));
+            Assert.AreEqual(carrierArray, planTest.WhenSplitToMultipleTrips(0,50));
         }
 
         [TestMethod]
-        public void isCityTrue()
+        public void TestOneDayIncrements()
+        {
+            PlannerTasks planTest = new PlannerTasks();
+            Assert.AreEqual(1, planTest.OneDayIncrements(0));
+        }
+
+        [TestMethod]
+        public void IsConfirmOrderCompletedTrue()
         {
             PlannerTasks planTest = new PlannerTasks();
             Assert.AreEqual(true, planTest.ConfirmOrderCompleted(0));
         }
 
         [TestMethod]
-        public void IsCityFalse()
+        public void IsConfirmOrderCompletedFalse()
         {
             PlannerTasks planTest = new PlannerTasks();
             Assert.AreEqual(false, planTest.PrintSummary(0));
@@ -51,17 +59,10 @@ namespace UnitTests
 
 
         [TestMethod]
-        public void isInvoiceGenerationTrue()
+        public void TestPrintSummary()
         {
             PlannerTasks planTest = new PlannerTasks();
-            Assert.AreEqual(true, planTest.PrintSummary(1));
-        }
-
-        [TestMethod]
-        public void isInvoiceGenerationFalse()
-        {
-            PlannerTasks planTest = new PlannerTasks();
-            Assert.AreEqual(false, planTest.PrintSummary(2));
+            Assert.AreEqual(1, planTest.PrintSummary(1));
         }
     }
 }

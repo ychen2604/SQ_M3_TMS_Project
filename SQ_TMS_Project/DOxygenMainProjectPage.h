@@ -26,7 +26,6 @@
 ///
 /// <hr>
 /// \test
-///	\verbinclude ../tests/M3_Test_Plan_Group6.xlsx
 /// \image html ../images/test_results.jpg
 /// 
 /// <hr>

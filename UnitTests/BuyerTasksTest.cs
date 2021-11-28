@@ -22,21 +22,21 @@ namespace UnitTests
         }
 
         [TestMethod]
-        public void newOrderTrue()
+        public void NewOrderTrue()
         {
             BuyerTasks buyerTest = new BuyerTasks();
             Assert.AreEqual(true, buyerTest.NewOrder("", ""));
         }
 
         [TestMethod]
-        public void newOrderFalse()
+        public void NewOrderFalse()
         {
             BuyerTasks buyerTest = new BuyerTasks();
             Assert.AreEqual(false, buyerTest.NewOrder("", ""));
         }
 
         [TestMethod]
-        public void isCityTrue()
+        public void IsCityTrue()
         {
             BuyerTasks buyerTest = new BuyerTasks();
             Assert.AreEqual(true, buyerTest.City(""));

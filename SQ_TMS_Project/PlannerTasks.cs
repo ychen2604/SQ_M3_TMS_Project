@@ -108,9 +108,17 @@ namespace SQ_TMS_Project
         */
         public int[] WhenSplitToMultipleTrips(int OrderID, int CityID)
         {
-
             int[] carrierArray = new int[50];
-            return carrierArray;
+
+            if (OrderID == 1)
+            {
+                
+                return carrierArray;
+            }
+            else
+            {
+                return carrierArray;
+            }
         }
 
         /**
