@@ -21,10 +21,11 @@
 /// 
 /// \class PlannerTasks
 ///
-/// \brief The purpose of this class is to model BuyerTasks. The buyer represents an employee of OSHT who is tasked with requesting Customer contracts from the 
-/// Contract Marketplace and generating an initial Order or contract. Their chief output is an Order, which 
-/// is marked for action by the Planner. After the Planner’s work is completed, the Buyer confirms each 
-/// completed Order and generates an Invoice to the Customer.
+/// \brief The purpose of this class is to model PlannerTasks. The Planner employee is responsible for furthering the order by selecting one or more registered 
+/// Carriers to fulfill the Order, in the form of Trips. Once assigned, the Planner monitors the progression of
+/// time in the application, ensuring that when all Trips on an order are completed, the Order will be 
+/// marked as Completed and sent back to the Buyer for Invoice Generation. Finally, the Planner may also 
+/// produce reports showing aggregate activity in OSHT
 /// 1 Planner receives Orders from the Buyer.
 /// 2 Planner selects Carriers from the targeted cities to complete the Order, which adds a ‘Trip’ to the Order for each Carrier selected.
 /// 3 Carriers may be limited in their transportation capacity, thus the Planner ensures that 
