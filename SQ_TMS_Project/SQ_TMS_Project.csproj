@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdminTasks.cs" />
+    <Compile Include="BuyerTasks.cs" />
     <Compile Include="PlannerTasks.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
