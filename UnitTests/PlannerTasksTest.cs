@@ -10,7 +10,7 @@ namespace UnitTests
         [TestMethod]
         public void IsReviewCustomersTrue()
         {
-            BuyerTasks planTest = new BuyerTasks();
+            PlannerTasks planTest = new PlannerTasks();
             Assert.AreEqual(true, planTest.ReceiversOrder(0,0));
         }
 

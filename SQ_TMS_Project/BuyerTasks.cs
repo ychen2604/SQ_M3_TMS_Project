@@ -61,18 +61,19 @@ namespace SQ_TMS_Project
         *	\param string Name
         *	\returns bool status
         */
-        public bool ReviewCustomers(string Name)
+        public bool ReviewCustomers(string name)
         {
             try
             {
                 // review name
-                if(name == true)
+                if(name == "")
                 {
-                return true;
+                    return true;
                 }
                 else
                 {
-                // insert new name in TMS System
+                    // insert new name in TMS System
+                    return false;
                 }
             }
             catch(Exception)
@@ -88,7 +89,7 @@ namespace SQ_TMS_Project
         *	\param string newOrder and string query
         *	\returns bool status
         */
-        public bool newOrder(string newOrder, string query)
+        public bool NewOrder(string newOrder, string query)
         {
             try
             {
@@ -108,9 +109,9 @@ namespace SQ_TMS_Project
         *	\param string city
         *	\returns bool status
         */
-        public bool city(string city)
+        public bool City(string city)
         {
-            if(city == newCity())
+            if(city == NewCity())
             {
                 return true;
             }
@@ -126,7 +127,7 @@ namespace SQ_TMS_Project
         *	\param int order
         *	\returns bool status
         */
-        public bool invoiceGeneration(int order)
+        public bool InvoiceGeneration(int order)
         {
             try
             {
@@ -146,9 +147,9 @@ namespace SQ_TMS_Project
         *	\param string cities
         *	\returns city
         */
-        private bool city(string cities)
+        private string NewCity()
         {
-         var cities = new List<string>()
+            List<string> cities = new List<string>()
                     {
                         "Waterloo",
                         "London",
@@ -156,8 +157,8 @@ namespace SQ_TMS_Project
                         "Cambridge"                    
                     };
             
-          //select relevent city
-          return city; 
+            //select relevent city
+            return cities[0];
         }
        
     }

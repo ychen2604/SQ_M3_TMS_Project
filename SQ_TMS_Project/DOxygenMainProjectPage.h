@@ -1,7 +1,5 @@
 /// \mainpage TMS Project
 ///
-/// \image html TMS.jpg
-///
 ///
 /// \section intro Program Introduction
 /// <b>TMS Application</b>
@@ -25,13 +23,18 @@
 ///
 /// <hr>
 /// \bug Not applicable
+///
+/// <hr>
+/// \test
+///	\verbinclude ../tests/M3_Test_Plan_Group6.xlsx
+/// \image html ../images/test_results.jpg
 /// 
 /// <hr>
 /// \section version Current version of the TMS Project:
 /// <ul>
 /// <li>\authors   <b><i>SQ_Group6_Members</i></b></li>
 /// <li>\version   1.00.00</li>
-/// <li>\date      2511-2021</li>
+/// <li>\date      2811-2021</li>
 /// <li>\pre       Not applicable</li>
 /// <li>\warning   Not applicable</li>
 /// <li>\copyright SQ_Group6</li>

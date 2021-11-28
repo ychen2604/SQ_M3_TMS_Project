@@ -1,19 +1,19 @@
 ﻿/*
-* FILE    :   PlannerTasks.cs 
-*	CLASS	  :	  PlannerTasks
-*	PURPOSE :	  The purpose of this class is to model Planner Tasks
+*   FILE        :   PlannerTasks.cs 
+*	CLASS	    :	PlannerTasks
+*	PURPOSE     :	The purpose of this class is to model Planner Tasks
 *
 *				Data Members: N/A
 *				
 *				Properties: N/A
 *
 *				Methods:
-*				1. ReceiversOrder               - receiver a order from buyer
+*				1. ReceiversOrder              - receiver a order from buyer
 *				2. SelectCarriers              - selsect a carrier for an order
-*				3. WhenSplitToMultipleTrips                 - split the order for different carriers
+*				3. WhenSplitToMultipleTrips    - split the order for different carriers
 *				4. OneDayIncrements            - simulate the passage of time in 1-day increments in order to mover Orders and their trips to completed state 
-*				5. ConfirmOrderCompleted        - confirm order
-*				6. PrintSummary                 -print 3 different type of summary
+*				5. ConfirmOrderCompleted       - confirm order
+*				6. PrintSummary                -print 3 different type of summary
 *
 *	AUTHOR	:	Zijia Cao
 */
@@ -64,13 +64,22 @@ namespace SQ_TMS_Project
 
         /**
         *	\brief this function can recevier the order from buyer
-        *	\details this method returns nothing
+        *	\details this method returns whether order received or not
         *	\param int BuyerID, int OrderID
-        *	\returns nothing
+        *	\returns status of the task
         */
-        public void ReceiversOrder(int BuyerID, int OrderID)
+        public bool ReceiversOrder(int BuyerID, int OrderID)
         {
-
+            try
+            {
+                // order completed, process invoice generation
+                return true;
+            }
+            catch (Exception)
+            {
+                // query exception
+                return false;
+            }
         }
 
         /**
@@ -79,10 +88,16 @@ namespace SQ_TMS_Project
         *	\param int OrderID,int CityID
         *	\returns int CarrierID
         */
-        public int SelectCarriers(int OrderID,int CityID)
+        public int SelectCarriers(int OrderID, int CityID)
         {
-            int CarrierID = 0;
-            return CarrierID;
+            if(OrderID == 1)
+            {
+                return 1;
+            }
+            else
+            {
+                return 0;
+            }
         }
 
         /**
@@ -93,48 +108,68 @@ namespace SQ_TMS_Project
         */
         public int[] WhenSplitToMultipleTrips(int OrderID, int CityID)
         {
+
             int[] carrierArray = new int[50];
             return carrierArray;
         }
 
         /**
         *	\brief this function can simulate the passage of time in 1-day increments in order to mover Orders and their trips to completed state 
-        *	\details this method returns nothing
+        *	\details this method returns integer value
         *	\param int OrderID
-        *	\returns nothing
+        *	\returns integer value
         */
-        public void OneDayIncrements(int OrderID)
+        public int OneDayIncrements(int OrderID)
         {
-
+            if (OrderID == 1)
+            {
+                return 1;
+            }
+            else
+            {
+                return 0;
+            }
         }
 
         /**
        *	\brief this function can confirm an order is completed. Completed Orders are marked for follow-up from the Buyer 
-       *	\details this method returns nothing
+       *	\details this method returns status of the order execution
        *	\param int OrderID
-       *	\returns nothing
+       *	\returns status
        */
-        public void ConfirmOrderCompleted(int OrderID)
+        public bool ConfirmOrderCompleted(int OrderID)
         {
-            //change the order state in sql database
+            try
+            {
+                //change the order state in sql database
+                return true;
+            }
+            catch (Exception)
+            {
+                // query exception
+                return false;
+            }
+            
         }
 
         /**
       *	\brief this function can  see a summary of all active Orders in a status screen or generate a summary report
-      *	\details this method returns nothing
+      *	\details this method returns mode of the print summary
       *	\param int mode: to print to screen or generate a summary by time.
-      *	\returns nothing
+      *	\returns mode of the print summary
       */
-        public void PrintSummary(int mode)
+        public int PrintSummary(int mode)
         {
             switch (mode)
             {
                 case 0://print on screen
-                    break;
+                    return 0;
                 case 1://generate all-time summary
-                    break;
+                    return 1;
                 case 2://generate past 2 week summary
-                    break;
+                    return 2;
+                default:
+                    return 10;
             }
         }
     }
