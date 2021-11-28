@@ -56,7 +56,7 @@ namespace SQ_TMS_Project
     {
 
         /**
-        *	\brief this function existing and new customers in TMS System
+        *	\brief this function reviews existing and new customers in TMS System
         *	\details this method returns status of the existing and new customers
         *	\param string Name
         *	\returns bool status
@@ -72,7 +72,7 @@ namespace SQ_TMS_Project
                 }
                 else
                 {
-                //insert new name in TMS System
+                // insert new name in TMS System
                 }
             }
             catch(Exception)
@@ -83,7 +83,7 @@ namespace SQ_TMS_Project
         }
 
         /**
-        *	\brief this function initiate a new order from the marketplace requests
+        *	\brief this function initiates a new order from the marketplace requests
         *	\details this method returns status of the query
         *	\param string newOrder and string query
         *	\returns bool status
@@ -121,7 +121,7 @@ namespace SQ_TMS_Project
         }
         
         /**
-        *	\brief this function reviews completed Orders and process them for Invoice Generation
+        *	\brief this function reviews completed orders and process them for invoice generation
         *	\details this method returns the invoice generation
         *	\param int order
         *	\returns bool status
@@ -139,5 +139,26 @@ namespace SQ_TMS_Project
                 return false;
             }
         }
+        
+        /**
+        *	\brief this function contians relevent city names
+        *	\details this method returns the relevant city
+        *	\param string cities
+        *	\returns city
+        */
+        private bool city(string cities)
+        {
+         var cities = new List<string>()
+                    {
+                        "Waterloo",
+                        "London",
+                        "Toronto",
+                        "Cambridge"                    
+                    };
+            
+          //select relevent city
+          return city; 
+        }
+       
     }
 }
