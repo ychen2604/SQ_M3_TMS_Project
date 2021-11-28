@@ -108,7 +108,7 @@ namespace SQ_TMS_Project
         */
         public List<int> WhenSplitToMultipleTrips(int OrderID, int CityID)
         {
-            int[] carrierArray = new int[50];
+            List<int> carrierArray = new List<int>();
 
             if (OrderID == 1)
             {

@@ -31,6 +31,7 @@ namespace UnitTests
 
         [TestMethod]
         public void TestWhenSplitToMultipleTrips()
+        { 
             List<int> carrierArray = new List<int>();
             carrierArray.Add(1);
             carrierArray.Add(2);
@@ -40,6 +41,7 @@ namespace UnitTests
 
         [TestMethod]
         public void TestOneDayIncrements()
+        { 
             int[] carrierArray = new int[50];
             PlannerTasks planTest = new PlannerTasks();
             Assert.AreEqual(carrierArray, planTest.WhenSplitToMultipleTrips(0,50));
