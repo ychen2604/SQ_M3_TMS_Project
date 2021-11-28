@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="AdminTaskTests.cs" />
     <Compile Include="BuyerTasksTest.cs" />
+    <Compile Include="PlannerTasksTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
