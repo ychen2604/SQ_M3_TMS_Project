@@ -10,58 +10,58 @@ namespace UnitTests
         [TestMethod]
         public void IsReviewCustomersTrue()                             
         {
-            BuyerTasks adm = new BuyerTasks();
-            Assert.AreEqual(true, adm.ReviewCustomer(""));
+            BuyerTasks BuyerTest = new BuyerTasks();
+            Assert.AreEqual(true, BuyerTest.ReviewCustomer(""));
         }
 
         [TestMethod]
         public void IsReviewCustomersFalse()
         {
-            BuyerTasks adm = new BuyerTasks();
-            Assert.AreEqual(false, adm.ReviewCustomer(""));
+            BuyerTasks BuyerTest = new BuyerTasks();
+            Assert.AreEqual(false, BuyerTest.ReviewCustomer(""));
         }
 
         [TestMethod]
         public void newOrderTrue()
         {
-            BuyerTasks adm = new BuyerTasks();
-            Assert.AreEqual(true, adm.newOrder(""));
+            BuyerTasks BuyerTest = new BuyerTasks();
+            Assert.AreEqual(true, BuyerTest.newOrder(""));
         }
 
         [TestMethod]
         public void newOrderFalse()
         {
-            BuyerTasks adm = new BuyerTasks();
-            Assert.AreEqual(false, adm.newOrder(""));
+            BuyerTasks BuyerTest = new BuyerTasks();
+            Assert.AreEqual(false, BuyerTest.newOrder(""));
         }
 
         [TestMethod]
         public void isCityTrue()
         {
-            BuyerTasks adm = new BuyerTasks();
-            Assert.AreEqual(true, adm.city(""));
+            BuyerTasks BuyerTest = new BuyerTasks();
+            Assert.AreEqual(true, BuyerTest.city(""));
         }
 
         [TestMethod]
         public void IsCityFalse()
         {
-            BuyerTasks adm = new BuyerTasks();
-            Assert.AreEqual(false, adm.city(""));
+            BuyerTasks BuyerTest = new BuyerTasks();
+            Assert.AreEqual(false, BuyerTest.city(""));
         }
         
         
         [TestMethod]
         public void isInvoiceGenerationTrue()
         {
-            BuyerTasks adm = new BuyerTasks();
-            Assert.AreEqual(true, adm.invoiceGeneration(""));
+            BuyerTasks BuyerTest = new BuyerTasks();
+            Assert.AreEqual(true, BuyerTest.invoiceGeneration(""));
         }
 
         [TestMethod]
         public void isInvoiceGenerationFalse()
         {
-            BuyerTasks adm = new BuyerTasks();
-            Assert.AreEqual(false, adm.invoiceGeneration(""));
+            BuyerTasks BuyerTest = new BuyerTasks();
+            Assert.AreEqual(false, BuyerTest.invoiceGeneration(""));
         }
     }
 }
