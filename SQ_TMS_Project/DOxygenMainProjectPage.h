@@ -26,7 +26,7 @@
 ///
 /// <hr>
 /// \test
-/// \image html ../images/test_results.jpg
+/// \image html test_results.jpg
 /// 
 /// <hr>
 /// \section version Current version of the TMS Project:
